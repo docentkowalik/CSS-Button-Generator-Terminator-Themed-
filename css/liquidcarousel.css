@@ -1,0 +1,42 @@
+.liquid {
+	width:580px;
+	/*border:2px solid #19301C;*/
+	margin:0px auto;
+	position:relative;
+	top:300px;
+	-moz-border-radius:10px 10px 10px 10px;
+	-webkit-border-radius:10px 10px 10px 10px;
+	border-radius:10px 10px 10px 10px;
+	padding-left:15px;
+	
+}
+.liquid .previous {
+	display:block;
+	height:56px;
+	width:60px;
+	/*background-color:#FFF;*/
+	background-image:url(../images/left_arrow.png);
+	background-repeat:no-repeat;
+	float:left;
+	margin:0;
+	padding:0;
+	padding-left:10px;
+	
+}
+.liquid .next {
+	display:block;
+	height:56px;
+	width:54px;
+	/*background-color:#FFF;*/
+	background-image:url(../images/rightt_arrow.png);
+	background-repeat:no-repeat;
+	float:right;
+	margin:0;
+	padding:0;
+	
+}
+.liquid ul li {
+	width:126px;
+	padding:10px 0px 0px 0px;
+	margin-left:30px;
+}

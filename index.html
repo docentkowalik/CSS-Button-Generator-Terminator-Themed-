@@ -1,0 +1,173 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+
+
+<script type="text/javascript" charset="utf-8" src="jaysalvat-buzz-v1.0.6-1-g344f3b3/jaysalvat-buzz-344f3b3/buzz.js"></script>
+
+	<script src="js/sliders.js"></script>
+    <link rel="stylesheet" media="screen" type="text/css" href="css/layout.css" />
+    <link rel="stylesheet" href="css/liquidcarousel.css" type="text/css"/>
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.2/themes/smoothness/jquery-ui.css" />
+    <link rel="stylesheet" href="css/hint.css-master/hint.css"/>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js" type="text/javascript"></script>
+
+	<script src="js/jquery.js"></script>
+    <script src="jscolor/jscolor.js"></script>
+  	<script src="jscolor/jscolorOLDER.js"></script>
+    
+    <script src="js/sliders.js"></script>
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script><!--needed for carousel-->
+    <script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+
+    <script src="http://code.jquery.com/ui/1.10.2/jquery-ui.js"></script>
+    <script src="js/jquery.liquidcarousel.pack.js"></script>
+    
+<style type="text/css">
+.ui-slider-horizontal{
+    height: 4px;
+	background:url(images/asx.png) ;
+	border-radius:30px;
+	border:double #666666;
+}
+.ui-slider .ui-slider-handle{
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    cursor: default;
+	background-image:url(images/handleeee.png);
+	border-radius:30px;
+	border:#333 2px solid;
+}
+</style>
+<title>Buttonator</title>
+<!--Adobe Edge Runtime-->
+    <script type="text/javascript" charset="utf-8" src="index_edgePreload.js"></script>
+    <style>
+        .edgeLoad-EDGE-36924219 { visibility:hidden; }
+        img { display: block; }
+    </style>
+<!--Adobe Edge Runtime End-->
+
+</head>
+<body>
+
+<audio autoplay="autoplay">
+<source src="music/buttonatorTheme.mp3" type="audio/mpeg"/>
+<source src="music/buttonatorTheme.ogg" type="audio/ogg"/></audio>
+<div id="container" class="edgeLoad-EDGE-36924219">
+
+    <header id="head">
+    	<div id="logo">
+        </div>
+    </header>
+<div id="white" class="edgeLoad-EDGE-36924219"><!--white space behind button viewer-->
+	<div id="outsideDiv">
+    	<center> <div id="ourButton" class="mainBtn">text</div></center><!--main button for styling with sliders and checkboxes-->
+	</div>
+</div><!--close white placed here --> 
+      
+    	<div id="button-container" class="edgeLoad-EDGE-36924219"><!--holds two sliders colour pickers and main button positioned behind the background png image-->
+        	<a href="#" id="code" class="hint--top" data-hint="Generate CSS code"><img src="images/code.png" width="35" height="35" /></a>              
+
+      
+      				<div id="sliderWidth"><input  id="valuePX"/></div>
+ 				 	<div id="sliderHeight"><input  id="valuePX1"/></div>
+                
+    					<div id="color-container">
+                    		<ul>
+                                <!--colour input boxes for different properties-->
+<span class="hint--top" data-hint="select button background color"><li><input id="boxx1" class="color {styleElement:'ourButton',pickerFaceColor:'transparent',pickerFace:3,pickerBorder:7,pickerInsetColor:'black'}"value="#CCC"/></li></span>                                
+
+<span class="hint--top" data-hint="select drop shadow color"><li>
+<input id="colorBox1" class="color {onImmediateChange:'updateColor();',pickerFaceColor:'transparent',pickerFace:3,pickerBorder:7,pickerInsetColor:'black'}" value="000000"/>
+</li></span>
+                         
+<span class="hint--top" data-hint="select text shadow color"><li><input id="colorBox2" class="color {onImmediateChange:'updateTextShadow();',pickerFaceColor:'transparent',pickerFace:3,pickerBorder:7,pickerInsetColor:'black'}" value="000000"/></li></span>
+                                
+<span class="hint--top" data-hint="select theme color"><li>
+<input id="box3"  /></li></span>
+                          </ul>
+                        
+                		</div><!--close color-container -->
+        			</div><!--close button-container-->
+        
+        <div id="white2" class="edgeLoad-EDGE-36924219"></div><!--placed in the DOM before control-tab div to fill the transparency of the BG image-->
+    		<div id="control-tab" class="edgeLoad-EDGE-36924219">
+            <img src="images/buttonatorTitle.png" id="titleee" alt="buttonator_title" class="edgeLoad-EDGE-36924219"/>
+     			<!--carousel for preset images of buttons-->
+                <div id="liquid1" class="liquid edgeLoad-EDGE-36924219">
+					<span class="previous" id="preBtn"></span>
+							<div class="wrapper hint--right" >
+                            <ul>
+                                <li><a href="#" ><img src="images/btn1.png" width="103" height="29" alt="image 01" border="0" id="b1" /></a></li>
+                                <li><a href="#" ><img src="images/btn2.png" width="103" height="29" alt="image 02" border="0" id="b2" /></a></li>
+                                <li><a href="#" ><img src="images/btn3.png" width="103" height="29" alt="image 03" border="0" id="b3" /></a></li>
+                                <li><a href="#" ><img src="images/btn4.png" width="103" height="29" alt="image 04" border="0" id="b4" /></a></li>
+                                <li><a href="#" ><img src="images/btn5.png" width="103" height="29" alt="image 05" border="0" id="b5" /></a></li>
+                                <li><a href="#" ><img src="images/btn6.png" width="103" height="29" alt="image 06" border="0" id="b6" /></a></li>
+                                <li><a href="#" ><img src="images/btn7.png" width="103" height="29" alt="image 07" border="0" id="b7" /></a></li>
+                                <li><a href="#" ><img src="images/btn8.png" width="103" height="29" alt="image 08" border="0" id="b8" /></a></li>
+                                <li><a href="#" ><img src="images/btn9.png" width="103" height="29" alt="image 09" border="0" id="b9" /></a></li>
+                                <li><a href="#" ><img src="images/btn10.png" width="103" height="29" alt="image 10" border="0" id="10" /></a></li>
+                                
+                            </ul>
+							</div>
+					<span class="next hint--right" id="nextBtn" ></span>
+                    
+				</div><!--end of carousel-->
+        	
+            <div id="sliderRadius"></div>
+            <div id="slidRadId"><input  id="valuePX2"/></div>
+
+
+			<div id="sliderBorder"></div>
+            <div id="slidBorId"><input  id="valuePX3"/></div>
+            
+                <select id="fonts"> 
+                <option value="Arial">Arial</option>
+                <option value="Verdana ">Verdana </option>
+                <option value="Impact">Impact </option>
+                <option value="Comic Sans MS">Comic Sans MS</option>
+            </select>
+           
+            <input type="text"  id="textField" placeholder="Your Text Here" maxlength="15"/>
+			
+            <div id="sliderFontSize"></div><br/>
+        <div id="sliderA"></div>
+        </div>
+        
+        
+        <div id="codeDisplay">
+        	<div id="myCode"></div>
+<img src="images/[files.indowebster.com]-close-button.png" id="close" alt="close window" width="35" height="35" style="position:absolute; top:10px; right:10px;"/>
+        </div><!--where the css is displayed-->
+
+<div id="textShadow" class="edgeLoad-EDGE-36924219">
+   <div id="slider1TextShad" class="slider" data-axis="x"></div>	<div id="slidtext1Id"><input  id="valuePX4"/></div><!--<input id="xShadowText" />-->
+   <div id="slider2TextShad" class="slider" data-axis="y"></div>	<div id="slidtext2Id"><input  id="valuePX5"/></div><!--<input id="yShadowText"/>-->
+   <div id="slider3TextShad" class="slider" data-axis="z"></div>	<div id="slidtext3Id"><input  id="valuePX6"/></div><!--<input  id="zShadowText"/>   --> 
+</div>
+
+<div id="boxShadow" class="edgeLoad-EDGE-36924219">
+	<div id="slider1Box" class="slider" data-axis="x"></div>	<div id="slidBox1Id"><input  id="valuePX7"/></div><!--<input id="xShadowValue" />-->
+	<div id="slider2Box" class="slider" data-axis="y"></div>	<div id="slidBox2Id"><input  id="valuePX8"/></div><!--</div><input id="yShadowValue"/>-->
+	<div id="slider3Box" class="slider" data-axis="z"></div>	<div id="slidBox3Id"><input  id="valuePX9"/></div><!--<input  id="zShadowValue"/>-->
+</div>  
+</div><!--close container-->
+<script>
+	$(document).ready(function() {
+			$('#liquid1').liquidcarousel({height:50, duration:400, hidearrows:false});
+		});
+	$('#code').click(function() {
+		$(this).hide(200);
+		$('#codeDisplay').fadeIn(300);
+	
+	$('#close').click(function(){
+		$('#codeDisplay').fadeOut(300);
+		$('#code').show();
+		});
+	});	
+</script>    
+</body>
+</html>
